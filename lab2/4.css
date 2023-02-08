@@ -1,0 +1,175 @@
+* {
+    Box-Sizing: Border-Box;
+    Margin: 0;
+    Padding: 0;
+}
+
+Body {
+    Font-Family: "Segoe UI", Tahoma, Geneva, Verdana, Sans-Serif;
+    Background: #Fff;
+    Color: #000;
+    Font-Size: 15px;
+    Line-Height: 1.5;
+}
+A {
+    Color: #262626;
+    Text-Decoration: None;
+}
+Ul {
+    List-Style: None;
+}
+
+.menu_on_left_top{
+    Display: Flex;
+    Align-Items: Center;
+    Height: 60px;
+    Padding: 20px 0;
+    Font-Size: 13px;
+}
+.minilogo{
+    margin-left: 80px;
+    margin-top: -10px;
+}
+.q{
+margin-top: -5px;
+margin-left: 25px;
+}
+.q:hover{
+    Border-Bottom: 2px Solid #262626;
+}
+
+.w{
+    margin-top: -5px;
+margin-left: 25px;
+}
+
+.w:hover{
+    Border-Bottom: 2px Solid #262626;
+}
+.e{
+    margin-top: -5px;
+margin-left: 25px;
+}
+
+.e:hover{
+    Border-Bottom: 2px Solid #262626;
+}
+
+.r{
+    margin-top: -5px;
+margin-left: 25px;
+}
+
+
+.miniman{
+    margin-left: 3px;
+    margin-top: -5px;
+}
+
+.lopa{
+    margin-top: -5px; 
+}
+
+.galochka{
+    margin-top: -0.4px;
+    margin-left: 6px;
+}
+.t{
+    margin-top: -5px;
+    margin-left: 530px;
+    margin-right: 2px;
+    
+}
+.t:hover{
+    Border-Bottom: 2px Solid #262626;
+}
+
+.y{
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+.y:hover{
+    Border-Bottom: 2px Solid #262626;
+}
+.u{
+    margin-top: -5px;
+    margin-left: 30px;
+}
+
+.u:hover{
+    Border-Bottom: 2px Solid #262626;
+}
+
+.microsoft_logo{
+    width: 182vh;
+    height: 450px;
+    margin-left: 60px;
+    
+}
+
+.text_on_picture h1{
+  transform: translate(3em, -8.6em);
+  font-family: inherit;
+  font-weight: 630;
+  font-size: 37px;
+  
+  
+}
+.text_on_picture p{
+transform: translate(7.5em, -20em);
+}
+
+.btn{
+    transform: translate(7.5em, -18em); 
+    Border-Bottom: 2px Solid #0067b8;
+    Display: Inline-Block;
+    Font-Weight: Bold;
+    Padding: 8px 13px;
+    Background: #0067b8;
+    Font-Size: 15px; 
+}
+.Btn{
+   color: white;
+}
+
+.Btn2{
+    transform: translate(19em, -20em); 
+}
+
+.f_blocks{
+    display: flex;
+    flex-direction: row;
+    Display: Grid;
+    Grid-Template-Columns: Repeat(4, 1fr);
+    Grid-Gap: 20px;
+    Margin-Bottom: 80px;
+    
+}
+.first{
+    margin-left: 80px;
+}
+.fourth{
+    margin-right: 80px;
+    margin-left: 20px;
+    
+}
+.third{
+  margin-left: 20px;
+
+}
+.second{
+    margin-left: 20px;
+}
+.f_blocks img{
+    margin-top: -70px;
+}
+
+.f_blocks a{
+    Display: Inline-Block;
+    Padding-Top: 10px;
+    Color: #0067b8;
+    Text-Transform: Uppercase;
+    Font-Weight: Bold;
+}
+
