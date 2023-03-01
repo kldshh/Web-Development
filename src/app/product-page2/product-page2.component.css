@@ -1,0 +1,35 @@
+.cards{
+    width: 95%;
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin:10px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 250px;
+    max-height: 630px;
+}
+.img{
+    width: 250px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+.Like{
+   
+  background: #0080ff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 55px;
+}
+
+
+
