@@ -1,36 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CartPageComponent } from './cart-page/cart-page.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import { ProductPageComponent } from './product-page/product-page.component';
-import { products } from './products';
-import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
-
-import { ProductPage2Component } from './product-page2/product-page2.component';
-import { products2 } from './products2';
-
-import { ProductPage3Component } from './product-page3/product-page3.component';
-import { products3 } from './products3';
-
-import { ProductPage4Component } from './product-page4/product-page4.component';
-import { products4 } from './products4';
-
-
-
+import { HomeComponent } from "./home/home.component";
+import {AboutComponent} from "./about/about.component";
+/*import {NotFoundComponent} from "./not-found/not-found.component";*/
+import {AlbumsComponent} from "./albums/albums.component";
+import {AlbumDetailComponent} from "./album-detail/album-detail.component";
+import {AlbumPhotosComponent} from "./album-photos/album-photos.component";
 
 const routes: Routes = [
-  {
-    path:'',component:MainLayoutComponent,children:[
-        {path:'',redirectTo:'/',pathMatch:'full'},
-        {path:'', component:MainPageComponent},
-        {path:'product',component:ProductPageComponent},
-        {path:'products2',component:ProductPage2Component},
-        {path:'products3',component:ProductPage3Component},
-        {path:'products4',component:ProductPage4Component},
-       
-    ]
-  }
+  {path:  'home', component: HomeComponent },
+  {path:  'about', component: AboutComponent },
+  {path:  'albums', component: AlbumsComponent },
+  {path:  'albums/:id', component: AlbumDetailComponent },
+  {path:  '', redirectTo: 'home', pathMatch: 'full'},
+  {path:  'albums/:id/photo', component: AlbumPhotosComponent},
+  {path:  'albums/:id/albums', redirectTo: 'albums', pathMatch: 'full'},
+ /* {path:  '**', component: NotFoundComponent },*/
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

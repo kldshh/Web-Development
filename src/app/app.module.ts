@@ -3,28 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import { ProductPageComponent } from './product-page/product-page.component';
-import { CartPageComponent } from './cart-page/cart-page.component';
-import { ProductPage2Component } from './product-page2/product-page2.component';
-import { ProductPage3Component } from './product-page3/product-page3.component';
-import { ProductPage4Component } from './product-page4/product-page4.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+/*import { NotFoundComponent } from './not-found/not-found.component';*/
+import { AlbumsComponent } from './albums/albums.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
+import { AlbumPhotosComponent } from './album-photos/album-photos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainLayoutComponent,
-    MainPageComponent,
-    ProductPageComponent,
-    CartPageComponent,
-    ProductPage2Component,
-    ProductPage3Component,
-    ProductPage4Component
+    HomeComponent,
+    AboutComponent,
+    /*NotFoundComponent,*/
+    AlbumsComponent,
+    AlbumDetailComponent,
+    AlbumPhotosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
