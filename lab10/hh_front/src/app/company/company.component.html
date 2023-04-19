@@ -1,0 +1,9 @@
+<h1>Companies</h1>
+<div *ngFor="let company of data" class="container">
+  <div>
+    <h3 routerLink="{{company.id}}">Company name: {{company.name}}</h3>
+    <h3>Company description: {{company.description}}</h3>
+    <h3>Company address: {{company.address}}</h3>
+  </div>
+</div>
+

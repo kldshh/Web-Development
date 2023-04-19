@@ -1,0 +1,10 @@
+<h1>Company: {{my_company.name}}</h1>
+
+<div *ngFor="let vacancy of vacancies" class="container">
+  <div style="border: black solid 0.2px;">
+    <h3>Vacancy name: {{vacancy.name}}</h3>
+    <h3>Vacancy description: {{vacancy.description}}</h3>
+    <h3>Vacancy salary: {{vacancy.salary}} </h3>
+  </div>
+</div>
+
